@@ -56,10 +56,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a.list-active {
-    color: #ec4d37;
-    font-weight: 700;
-}
 
 nav .right-side a {
     font-size: 15px;
