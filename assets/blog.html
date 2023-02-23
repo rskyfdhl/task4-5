@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <title>Creating Blog Page</title>
+  <link rel="stylesheet" href="css/blog.css" />
+  <!-- <link rel="stylesheet" href="assets/css/navbar.css" /> -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="left-side">
+      <ul>
+        <li> <a href="https://dumbways.id">
+            <img src="image/dw.png" width="30"> </a>
+        </li>
+        <li class="d-sm-none"><a href="index.html" class="list-active">Home</a> </li>
+        <li class="d-sm-none"><a href="blog.html"> Blog</a> </li>
+      </ul>
+    </div>
+    <div class="right-side d-sm-none">
+      <a href="assets/form-contact.html">Contact Me</a>
+      <span class="material-symbols-outlined" style="cursor: pointer;" onclick="toggleShowNav()">
+        menu
+      </span>
+    </div>
+  </nav>
+  <div class="d-none transition" id="nav-sm">
+
+
+    <div class="overlay-nav">
+
+      <div class="text-white">
+        <a href=" index.html">
+          Home
+        </a>
+      </div>
+      <div class="text-white">
+        <a href="assets/blog.html">
+          Blog
+        </a>
+      </div>
+      <div class="text-white">
+
+        <a href="assets/form-contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <!-- Form -->
+  <div class="blog">
+    <div class="blog-form">
+      <div class="form-container">
+        <form onsubmit="getData(event)">
+          <h1>Create Post Blog</h1>
+          <div>
+            <label for="input-blog-title">Title</label>
+            <input id="input-blog-title" />
+          </div>
+          <div>
+            <label for="input-blog-content">Content</label>
+            <textarea id="input-blog-content"></textarea>
+          </div>
+
+          <div>
+            <label>Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-blog-image">
+                <p>Attach File</p>
+                <span class="material-symbols-outlined">
+                  attachment
+                </span>
+              </label>
+              <input type="file" id="input-blog-image" hidden />
+            </div>
+          </div>
+          <div class="button-group">
+            <button>Post Blog</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr class="line" />
+    <div class="blog-list" id="contents">
+      <!-- dynamic content would be here -->
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="image/tokyo-ghoul.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Post Blog</button>
+          </div>
+          <h1>
+            <a href="blog-detail.html" target="_blank">Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a>
+          </h1>
+          <div class="detail-blog-content">
+            12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+            ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+            meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quam, molestiae
+            numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+            eligendi debitis?
+          </p>
+
+          <div style="float:right; margin: 10px">
+            <p style="font-size: 15px; color:grey">1 minutes ago</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/blog.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
