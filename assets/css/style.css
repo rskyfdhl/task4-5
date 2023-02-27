@@ -26,19 +26,19 @@ nav div {
 }
 
 nav div.left-side {
-    padding-left: 90px;
+    padding-left: 10px;
 
 }
 
 nav div.right-side {
-    padding-right: 90px;
+    padding-right: 80px;
     display: flex;
     justify-content: flex-end;
 }
 
 nav ul {
     list-style-type: none;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 .left-side img {

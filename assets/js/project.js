@@ -83,17 +83,17 @@ const getDuration = (timeStart, timeEnd) => {
             distance / (4 * 7 * 24 * 60 * 60 * miliSecond)
         )
         if (monthDistance > 0) {
-            return monthDistance + " Month Ago";
+            return monthDistance + " Month Now";
         } else {
             const weekDistance = Math.floor(
                 distance / (7 * 24 * 60 * 60 * miliSecond)
             )
             if (weekDistance > 0) {
-                return weekDistance + " Week Ago";
+                return weekDistance + " Week Now";
             } else {
                 const dayDistance = Math.floor(distance / (24 * 60 * 60 * miliSecond))
                 if (dayDistance > 0) {
-                    return dayDistance + " Day Ago";
+                    return dayDistance + " Day Now";
                 } else {
                     const closeDistance = Math.floor(distance / (60 * 60 * miliSecond))
                     if (closeDistance > 0) {
