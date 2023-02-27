@@ -63,11 +63,10 @@ function createTime(time) {
   let date = time.getDate()
   let hours = time.getHours()
   let minutes = time.getMinutes()
-
-  const month = ["January", ]
   return (`${date} ${month} ${years} ${hours} : ${minutes} WIB`)
 }
-unction toggleShowNav() {
+
+function toggleShowNav() {
   const navSm = document.getElementById("nav-sm")
   navSm.classList
 
