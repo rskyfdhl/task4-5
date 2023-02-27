@@ -18,6 +18,7 @@
         </li>
         <li class="d-sm-none"><a href="../index.html">Home</a> </li>
         <li class="d-sm-none "><a href="blog.html" class="list-active"> Blog</a> </li>
+        <li class="d-sm-none"><a href="Project.html">Project</a></li>
       </ul>
     </div>
     <div class="right-side d-sm-none">
@@ -43,8 +44,10 @@
         </a>
       </div>
       <div class="text-white">
-
         <a href="form-contact.html">Contact</a>
+      </div>
+      <div class="text-white">
+        <a href="Project.html">Project</a>
       </div>
     </div>
   </div>
@@ -55,13 +58,17 @@
     <div class="blog-form">
       <div class="form-container">
         <form onsubmit="getData(event)">
-          <h1>Create Post Blog</h1>
+          <h1>ADD MY PROJECT</h1>
           <div>
-            <label for="input-blog-title">Title</label>
+            <label for="input-blog-title">Project Name</label>
             <input id="input-blog-title" />
           </div>
           <div>
-            <label for="input-blog-content">Content</label>
+            <div><label for="">Start Date</label> </div>
+            <div><label for="">End Date</label> </div>
+          </div>
+          <div>
+            <label for="input-blog-content">Description</label>
             <textarea id="input-blog-content"></textarea>
           </div>
 
@@ -121,7 +128,6 @@
     </div>
   </div>
   <script src="assets/js/blog.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

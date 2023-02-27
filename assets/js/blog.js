@@ -1,31 +1,31 @@
 let datas = []
 
-function getData(event){
-    event.preventDefault()
+function getData(event) {
+  event.preventDefault()
 
-    let title = document.getElementById("input-blog-title").value
-    let content = document.getElementById("input-blog-content").value
-    let image = document.getElementById("input-blog-image").files
+  let title = document.getElementById("input-blog-title").value
+  let content = document.getElementById("input-blog-content").value
+  let image = document.getElementById("input-blog-image").files[0]
 
-    image = URL.createObjectURL(image[0])
+  image = URL.createObjectURL(image[0])
 
-    let data = {
-        title,
-        content,
-        image,
-        date: new Date(),
-        author: "Dandi Saputra"
-    }
+  let data = {
+    title,
+    content,
+    image,
+    date: new Date(),
+    author: "Muhammad Risky Fadhiila"
+  }
 
-    datas.push(data)
-    console.log(datas)
-    showData()
+  datas.push(data)
+  console.log(datas)
+  showData()
 }
 
 const showData = () => {
-    document.getElementById("contents").innerHTML = ''
-    for(let i = 0; i < datas.length; i++) {
-        document.getElementById("contents").innerHTML += `
+  document.getElementById("contents").innerHTML = ''
+  for (let i = 0; i < datas.length; i++) {
+    document.getElementById("contents").innerHTML += `
         <div class="blog-list-item">
           <div class="blog-image">
             <img src="${datas[i].image}" alt="" />
@@ -41,7 +41,8 @@ const showData = () => {
               >
             </h1>
             <div class="detail-blog-content">
-              ${datas[i].date} | ${datas[i].author}
+              
+            ${createTime(time)}${datas[i].date} | ${datas[i].author}
             </div>
             <p>
               ${datas[i].content}
@@ -53,5 +54,25 @@ const showData = () => {
 
           </div>
         </div>`
-    }
+  }
+}
+
+function createTime(time) {
+  let years = time.getFullYear()
+  let month = time.getMonth()
+  let date = time.getDate()
+  let hours = time.getHours()
+  let minutes = time.getMinutes()
+
+  const month = ["January", ]
+  return (`${date} ${month} ${years} ${hours} : ${minutes} WIB`)
+}
+unction toggleShowNav() {
+  const navSm = document.getElementById("nav-sm")
+  navSm.classList
+
+
+  if ([...navSm.classList].includes("d-none"))
+    navSm.classList = "d-show transition"
+  else navSm.classList = "d-none transition"
 }
