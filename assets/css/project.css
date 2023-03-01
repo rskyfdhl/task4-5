@@ -74,7 +74,7 @@ nav .right-side a {
 
 .overlay-nav {
     width: 100%;
-    height: 18%;
+    height: 15%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.47);
     display: flex;
@@ -82,6 +82,13 @@ nav .right-side a {
     align-items: end;
     flex-direction: column;
     gap: 10px;
+}
+
+.overlay-nav a.list-active {
+    background-color: #000000;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    font-weight: 750;
 }
 
 .d-none {
@@ -443,11 +450,20 @@ img {
     }
 
     .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .d-sm-none a {
         display: none !important;
+    }
+
+    .upper img {
+        height: 120px;
+    }
+
+    .card {
+        width: 185px;
+
     }
 }
 

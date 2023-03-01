@@ -40,7 +40,7 @@ const showData = () => {
   <div>
       <div class="title-card"> <a href="detail-project.html?projectName=${
         dataFull[i].projectName
-      }&startDate=${dataFull[i].startDate}&endDate=${
+      }&endDate=${dataFull[i].endDate}&startDate=${
       dataFull[i].startDate
       }&image=${dataFull[i].image}&description=${dataFull[i].Description}&tech=${
       validasi[i]
