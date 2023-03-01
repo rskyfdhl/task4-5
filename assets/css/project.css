@@ -372,6 +372,10 @@ img {
     margin-top: 20px;
 }
 
+.object-cover {
+    object-fit: cover;
+}
+
 .text-card {
     white-space: nowrap;
     overflow: hidden;

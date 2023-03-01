@@ -35,7 +35,7 @@ const showData = () => {
         document.getElementById("contents").innerHTML += `
        <div class="card">
   <div class="upper">
-      <img src="${dataFull[i].image}" alt="">
+      <img src="${dataFull[i].image}" class="object-cover" alt="">
   </div>
   <div>
       <div class="title-card"> <a href="detail-project.html?projectName=${
@@ -46,7 +46,7 @@ const showData = () => {
       validasi[i]
       }&duration=${getDuration(dataFull[i].startDate, dataFull[i].endDate)}"> ${
       dataFull[i].projectName
-      } - ${dataFull[i].endDate} </a></div>
+      } - ${new Date(dataFull[i].endDate).getFullYear()} </a></div>
       <div class="bulan"> durasi: ${getDuration(
         dataFull[i].startDate,
         dataFull[i].endDate
@@ -59,7 +59,7 @@ const showData = () => {
       <div class="logo">
           ${validasi.map(function (e) {
               return '<i class="' + e + '"></i>'
-            })}
+            }).join('')}
       </div>
       <div class="action">
           <button>edit</button>
